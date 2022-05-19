@@ -1,0 +1,261 @@
+* {
+  font-family: "Calibri";
+}
+
+body {
+  background-image: linear-gradient(#c3d0ff, #ffffff);
+  height: 100%;
+  background-repeat: no-repeat;
+}
+html {
+  height: 100%;
+}
+
+a:link,
+a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 30, 128);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(115, 116, 115);
+  color: white;
+}
+
+#banner {
+  border-radius: 25px;
+  margin-top: 90px;
+  width: 100%;
+}
+
+.bottom {
+  width:30%;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#reg {
+  text-align: center;
+}
+
+footer {
+  background-color: powderblue;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.bordat {
+  border: solid;
+  background-image: linear-gradient(white, gray);
+  width:100%;
+  border-radius: 5px;
+}
+
+#bordath {
+  text-align:left;
+  width:50%;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 180%;
+}
+
+.sobrenos {
+  margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 80%;
+  text-align: justify;
+}
+
+.h1-blue {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: darkblue;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.botao-enviar {
+  border-radius: 10%;
+  background-color: green;
+  color: azure;
+  height: 40px;
+  width: 70px;
+}
+
+.botao-enviar:hover {
+  border-radius: 10%;
+  background-color: rgb(0, 250, 0);
+  color: black;
+  height: 40px;
+  width: 70px;
+  transition: 0.3s;
+}
+
+.botao-deletar {
+  border-radius: 10%;
+  background-color: rgb(116, 0, 0);
+  color: azure;
+  height: 40px;
+  width: 70px;
+}
+
+.botao-deletar:hover {
+  border-radius: 10%;
+  background-color: red;
+  color: black;
+  height: 40px;
+  width: 70px;
+  transition: 0.3s;
+}
+
+select,
+textarea,
+input {
+  border-radius: 5px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.position-menu {
+  width: 99%;
+}
+
+.parceiros {
+  display: flex;
+}
+
+.parceiros img {
+  width: 100%;
+}
+
+.colunaparceiros {
+  flex: 33.33%;
+  padding: 50px;
+}
+
+.divtimes {
+  flex: 33.33%;
+  padding: 50px;
+  text-align: center;
+}
+
+#time1 {
+  background-color: red;
+  color: white;
+  padding: 50px 100px;
+  font-size: 30px;
+}
+
+#time2 {
+  background-color: black;
+  color: white;
+  padding: 50px 100px;
+  font-size: 30px;
+}
+
+#time3 {
+  background-color: green;
+  color: white;
+  padding: 50px 100px;
+  font-size: 30px;
+}
+
+#timeprincipal {
+  background-color: rgb(80, 83, 91);
+  padding: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.servicos {
+  text-align: center;
+}
+
+div.servicosimg {
+  vertical-align: top;
+  display: inline-block;
+  width: 120px;
+  padding: 50px;
+}
+.servicosimg img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.servicostexto {
+  display: block;
+  margin-top: 10px;
+}
+
+.servicostit {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.divform {
+  width: 100%;
+}
+
+.divform table {
+  width: 100%;
+  max-width:550px;
+  border:0; 
+  margin-top: 2%; 
+  margin-bottom: 2%;
+}
+
+.divform textarea {
+  width:100%;
+  max-width:350px;
+}
+
+.forminput {
+  width:100%;
+  max-width:250px;
+}
+
+.contato {
+  position: relative;
+  background-color: rgb(228, 228, 228);
+  border-style: solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+}
+
+@media only screen and (max-width: 480px) {
+  .parceiros {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .servicos {
+    flex-direction: column;
+    display: flex;
+    margin-left: 25%
+  }
+
+  .contato {
+    width: fit-content;
+  }
+}
+
+#jstext {
+  float: right;
+}

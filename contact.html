@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="shortcut icon" type="imagex/png" href="./images/logo.png">
+        <script>
+            function confirm_reset() {
+                return confirm("Tem certeza que deseja limpar o formulário?");
+            }   
+        </script>
+    </head>
+
+    <body class="gradiente">
+        <div class="position-menu">
+            <table class="bordat">
+                <tr>
+                    <th id="bordath">
+                        <img class="logo" ; src="./images/logo.png">
+                    </th>
+                    <th><a href="home.html">HOME</a></th>
+                    <th><a href="services.html">SERVIÇOS</a></th>
+                    <th><a href="contact.html">CONTATO</a></th>
+                </tr>
+            </table>
+            <h1 class="h1-blue">Formulário para contato</h1>
+
+            <div class="divform">
+                <form class='contato' action="#" method="post">
+                    <table cellpadding="8" cellspacing="0">
+                        <tr>
+                            <td>Nome*:</td>
+                            <td><input class="forminput" type="text"
+                                    maxlength="60" placeholder="Seu nome completo" required/></td>
+                        </tr>
+                        <tr>
+                            <td>Telefone/Celular:
+                            </td>
+                            <td>
+                                <input class="forminput" type="tel"
+                                    maxlength="15"
+                                    placeholder="Telefone para contato" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email*:
+                            </td>
+                            <td>
+                                <input class="forminput" type="email"
+                                    maxlength="90"
+                                    required
+                                    placeholder="Email para contato" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tipo de Cliente:
+                            </td>
+                            <td>
+                                <input type="radio" id="fisica" name="pessoa"
+                                    value="fisica">
+                                <label for="fisica">Pessoa Física</label><br>
+                                <input type="radio" id="juridica" name="pessoa"
+                                    value="juridica">
+                                <label for="juridica">Pessoa Jurídica</label><br>
+                            </td>
+                            <tr>
+                                <td>
+                                    Localização*:
+                                </td>
+                                <td>
+                                    <select Name="local" required>
+                                        <option> São Paulo</option>
+                                        <option> Rio de Janeiro</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>Comentários*:
+                            </td>
+                            <td>
+                                <textarea rows="7" cols="40" required>
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>* - Obrigatório</td>
+                            <td>
+                                <input class="botao-enviar" type="submit"
+                                    value="Enviar" />
+                                <input class="botao-deletar" type="reset"
+                                    value="Deletar"
+                                    onclick="confirm_reset();">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <footer>
+                <hr>
+                <p id="reg"> Todos direitos reservados &reg</p>
+                <table class="bottom">
+                    <tr>
+                        <th><a href="home.html">HOME</a></th>
+                        <th><a href="services.html">SERVIÇOS</a></th>
+                        <th><a href="contact.html">CONTATO</a></th>
+                    </tr>
+                </table>
+                <script src="contatos.js"></script>
+            </footer>
+
+
+        </body>
+
+    </html>
